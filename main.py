@@ -19,7 +19,7 @@ def read_data(file):
 
 def show_data(contacts, message='Для возврата в меню нажмите ENTER'):
         for i in range(len(contacts)):
-            print(f'{i + 1} {contacts[i].replace('\n', '')}')
+            print(f'{i + 1}\t1{contacts[i].replace('\n', '')}')
         return input(message)
 
 
@@ -66,12 +66,16 @@ def main():
         if select == '0':
             check = False
         elif select == '1':
+            clear()
             show_data(read_data(file_name))
         elif select == '2':
+            clear()
             write_data(file_name)
         elif select == '3':
+            clear()
             show_data(search_data(file_name))
         elif select == '4':
+            clear()
             copy_data(read_data(file_name))
 
 
