@@ -51,8 +51,6 @@ def copy_data(contacts):
         with open('copy.txt', 'w', encoding='utf-8') as file:
             file.write(f'{contacts[select - 1]}\n')
 
-    
-
 
 def main():
     file_name = 'contatсs.txt'
